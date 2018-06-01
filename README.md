@@ -1,4 +1,4 @@
-# Brian's dotfiles
+# Currently Tony's dotfiles, Formally Brian's dotfiles
 
 This repo is mostly for me but you're welcome to make suggestions.
 
