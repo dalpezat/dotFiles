@@ -1,0 +1,69 @@
+[user]
+    name = Brian Schmitt
+    useConfigOnly = true
+[color]
+    ui = auto
+[core]
+    editor = vim
+    excludesfile = ~/.global_ignore
+    filemode = false
+[pretty]
+    lg = %x09%C(yellow)%h %C(reset)%s %C(green)(%cr) %C(bold blue)<%cn> %C(red)%d%C(reset)
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff --color --color-words --abbrev
+    dc = diff --cached
+    la = log --pretty=lg --date=relative --graph --all
+    lg = log --pretty=lg --date=relative --graph
+    ll = log --pretty=lg --numstat
+    fo = fetch origin
+    up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+    wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+    changes = diff ..origin/master
+    up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+    cob = checkout -b
+    cleanup = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+    bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
+    conflicts = !git ls-files -u | cut -f 2 | sort -u
+    migrate = "!f(){ CURRENT=$(git symbolic-ref --short HEAD); git checkout -b $1 && git branch --force $CURRENT ${3-'$CURRENT@{u}'} && git rebase --onto ${2-master} $CURRENT; }; f"
+    # Show files ignored by git:
+    ignored = ls-files -o -i --exclude-standard
+    alias = config --global --includes --get-regexp alias
+    finda = "!grepalias() { git config --global --get-regexp alias | grep -i \"$1\" | awk -v nr=2 '{sub(/^alias\\./,\"\")};{printf \"\\033[31m%_10s\\033[1;37m\", $1};{sep=FS};{for (x=nr; x<=NF; x++) {printf \"%s%s\", sep, $x; }; print \"\\033[0;39m\"}'; }; grepalias"
+    unsynced = "!unsynced() { find . -name .git -type d 2>/dev/null|while read -r l;do (pushd \"$l/../\"&&git fetch&&git status -sb&&popd > /dev/null);echo;done }; unsynced"
+    spa = !git stash && git pull && git stash pop
+    prune = git remote update --prune
+    undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
+    #undo reset --soft HEAD^
+    stash = stash --include-untracked
+    rom = pull --rebase origin master
+    srom = !git stash && git pull --rebase origin master && git stash pop
+    dh = "!f() { git diff HEAD~$1; }; f"
+[push]
+    default = current
+[pull]
+    rebase = true
+[fetch]
+    prune = true
+[rebase]
+    autosquash = true
+[status]
+    showUntrackedFiles = all
+[help]
+	autocorrect = 1
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = "code --wait "
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = "code --wait --diff  "
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
