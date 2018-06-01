@@ -19,7 +19,7 @@ shutdown /r
 #endif
 
 # restart powershell session to add git to path
-git clone https://github.com/brianschmitt/dotfiles.git
+git clone https://github.com/dalpezat/dotfiles.git
 . ~/dotfiles/win/bootstrap.ps1
 ```
 - Set ProcExplorer to override TaskManager
@@ -38,7 +38,7 @@ git clone https://github.com/brianschmitt/dotfiles.git
 cd ~
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install git
-git clone https://github.com/brianschmitt/dotfiles.git
+git clone https://github.com/dalpezat/dotfiles.git
 . ~/dotfiles/osx/bootstrap.sh
 
 chsh -s /usr/local/bin/bash
@@ -53,7 +53,7 @@ chsh -s /usr/local/bin/bash
 ### Linux:
 ```shell
 cd ~
-git clone https://github.com/brianschmitt/dotfiles.git
+git clone https://github.com/dalpezat/dotfiles.git
 . ~/dotfiles/lnx/bootstrap.sh
 ```
 
