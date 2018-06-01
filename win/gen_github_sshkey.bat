@@ -2,7 +2,7 @@ mv "C:\Program Files (x86)\Gow\bin\ssh.bat" "C:\Program Files (x86)\Gow\bin\ssh2
 
 cd %HOME%/.ssh
 
-ssh-keygen -t rsa -C "brianschmitt@gmail.com" -f github_rsa
+ssh-keygen -t rsa -C "dalpezat@gmail.com" -f github_rsa
 
 ssh-add github_rsa
 
