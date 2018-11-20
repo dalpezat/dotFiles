@@ -26,6 +26,7 @@ choco install putty.portable -y
 choco install ConEmu -y
 choco install hyper -y
 choco install sysinternals -y
+choco install openssh -y
 #choco install gow -y
 
 # Source Controls
