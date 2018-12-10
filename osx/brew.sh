@@ -26,7 +26,7 @@ brew cask install iterm2-nightly
 brew cask install keepassxc
 brew cask install postman
 
-brew cask install visual-studio-code-insiders
+brew cask install visual-studio-code
 
 #brew cask install haroopad
 
