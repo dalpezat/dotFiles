@@ -19,11 +19,10 @@ brew linkapps macvim
 brew install caskroom/cask/brew-cask
 
 #brew cask install java
-#brew cask install google-chrome
+brew cask install google-chrome
 brew cask install google-drive
 brew tap caskroom/versions
 brew cask install iterm2-nightly
-brew cask install radiant-player
 brew cask install keepassxc
 brew cask install postman
 
