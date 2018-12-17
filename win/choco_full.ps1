@@ -12,6 +12,9 @@ choco install RdcMan -y
 choco install putty -y
 choco install adb -y
 
+#aws
+choco install awscli -y
+
 # Other
 #choco install spotify -y
 
