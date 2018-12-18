@@ -15,6 +15,10 @@ choco install adb -y
 #aws
 choco install awscli -y
 
+#docker
+choco install docker -y
+choco install docker-toolbox -y
+
 # Other
 #choco install spotify -y
 
