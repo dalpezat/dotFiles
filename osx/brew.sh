@@ -14,6 +14,9 @@ brew install macvim --with-override-system-vim
 #brew install node
 brew install openssl
 
+#aws cli
+brew install awscli
+
 brew linkapps macvim
 
 brew install caskroom/cask/brew-cask
