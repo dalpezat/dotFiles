@@ -13,6 +13,7 @@ brew install macvim --with-override-system-vim
 #brew install mono
 #brew install node
 brew install openssl
+brew install zsh
 
 #aws cli
 brew install awscli
