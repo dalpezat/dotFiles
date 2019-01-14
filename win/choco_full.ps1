@@ -29,3 +29,6 @@ choco install googlechrome -y
 #Web Dev
 choco install nodejs-lts -y
 #choco install ctags -y
+
+#Fonts
+choco install firacode -y
