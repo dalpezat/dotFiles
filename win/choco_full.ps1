@@ -16,8 +16,7 @@ choco install adb -y
 choco install awscli -y
 
 #docker
-choco install docker -y
-choco install docker-toolbox -y
+choco install -y docker-toolbox -ia /COMPONENTS="kitematic,virtualbox,dockercompose" --force
 
 # Other
 #choco install spotify -y
