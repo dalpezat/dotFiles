@@ -25,6 +25,7 @@ brew install caskroom/cask/brew-cask
 #brew cask install java
 brew cask install google-chrome
 brew cask install google-drive-file-stream
+brew cask install google-backup-and-sync
 brew tap caskroom/versions
 brew cask install iterm2-nightly
 brew cask install keepassxc
