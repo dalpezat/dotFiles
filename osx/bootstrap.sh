@@ -12,5 +12,5 @@ vim +:BundleInstall
 # finish install of oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Run the android tool to choose install tools
-android
+# add powerlevel9k theme for oh-my-zsh
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
