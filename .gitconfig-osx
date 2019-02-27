@@ -4,3 +4,6 @@
     helper = osxkeychain
 [core]
 	autocrlf = input
+[user]
+	email = dalpezat@gmail.com
+	name = Tony DalPezzo
