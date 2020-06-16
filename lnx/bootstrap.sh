@@ -1,8 +1,13 @@
 #!/bin/bash
 
-cd ~
+# Run all programs/ install scripts
+for f in programs/*.sh; do bash "$f" -H; done
 
-. ~/dotfiles/set_symlinks.sh
+# Get all upgrades
+sudo apt upgrade -y
 
-git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
-vim +:BundleInstall
+# See our bash changes
+source ~/.bashrc
+
+# Fun hello
+figlet "Hello!" | lolcat
