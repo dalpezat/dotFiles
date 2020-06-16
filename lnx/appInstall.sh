@@ -21,3 +21,7 @@ install git
 install nmap
 install tree
 install vim
+
+# Fun stuff
+install figlet
+install lolcat
