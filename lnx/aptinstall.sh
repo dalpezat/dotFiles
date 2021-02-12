@@ -25,3 +25,12 @@ install vim
 # Fun stuff
 install figlet
 install lolcat
+
+# make git pretty
+cd ~
+curl https://github.com/lyze/posh-git-sh/blob/master/git-prompt.sh -o git-prompt.sh
+
+# cat << EOF >> .bashrc
+# source ~/git-prompt.sh
+# export PROMPT_COMMAND='__posh_git_ps1 "\\[\[\e[0;32m\]\u@\h \[\e[0;33m\]\w" " \[\e[1;34m\]\n\$\[\e[0m\] ";'$PROMPT_COMMAND
+# EOF
