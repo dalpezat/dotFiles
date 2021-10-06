@@ -1,10 +1,10 @@
 ﻿Set-Location ~
 
 ~/dotfiles/set_symlinks.bat
-~/dotfiles/win/choco_min.ps1
-~/dotfiles/win/choco_dotnet.ps1
-~/dotfiles/win/choco_full.ps1
-~/dotfiles/win/win_features.ps1
+~/dotfiles/win/choco_personal.ps1
+# ~/dotfiles/win/choco_dotnet.ps1
+#~/dotfiles/win/choco_full.ps1
+#~/dotfiles/win/win_features.ps1
 ~/dotfiles/win/VSCodeExtensions.ps1
 
 #git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle

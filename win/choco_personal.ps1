@@ -1,4 +1,4 @@
-﻿# update powershell
+# update powershell
 choco install PowerShell -y
 
 # General Utils
