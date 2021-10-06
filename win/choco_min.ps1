@@ -4,7 +4,6 @@ choco install PowerShell -y
 # Fonts
 choco install dejavufonts -y
 choco install AnonymousPro -y
-choco install firacode -y
 
 # Editors
 choco install Vim -y

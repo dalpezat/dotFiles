@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ssh-keygen -t rsa -C "brianschmitt@gmail.com" -f ~/.ssh/github_rsa
+ssh-keygen -t rsa -C "dalpezat@gmail.com" -f ~/.ssh/github_rsa
 
 eval "$(ssh-agent -s)"
 
@@ -17,5 +17,5 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
     cd ~/dotfiles
-    git remote set-url origin git@github.com:brianschmitt/dotfiles
+    git remote set-url origin git@github.com:dalpezat/dotfiles
 fi

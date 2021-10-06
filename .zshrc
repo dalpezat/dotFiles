@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/schmitt/.oh-my-zsh
+export ZSH=/Users/tony/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -53,7 +53,7 @@ plugins=(git rsync git-flow)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/schmitt/scripts/"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/tony/scripts/"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -100,9 +100,9 @@ alias gf='grepfind'
 
 alias home='cd ~/'
 
-alias weather='curl -4 http://wttr.in/allentown'
+alias weather='curl -4 http://wttr.in/flemington'
 
-DEFAULT_USER='schmitt'
+DEFAULT_USER='tony'
 
 #
  #   L E S S   C O L O R S   F O R   M A N   P A G E S
@@ -132,7 +132,7 @@ export LESS_TERMCAP_ue=$'\E[0m'           # end underline
  # Light Gray  0;37     White         1;37
  #########################################
 
-source /Users/schmitt/.iterm2_shell_integration.zsh
+source /Users/tony/.iterm2_shell_integration.zsh
 
 iterm2_print_user_vars() {
   iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
