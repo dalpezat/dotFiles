@@ -13,11 +13,6 @@ Set-ExecutionPolicy Unrestricted
 iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))
 choco install git -y
 
-#if WIN7
-choco install powershell -y
-shutdown /r
-#endif
-
 # restart powershell session to add git to path
 git clone https://github.com/dalpezat/dotfiles.git
 . ~/dotfiles/win/bootstrap.ps1
@@ -57,16 +52,4 @@ git clone https://github.com/dalpezat/dotfiles.git
 . ~/dotfiles/lnx/bootstrap.sh
 ```
 
-### Common:
-- Chrome Extensions
-    - [Do not track me](https://chrome.google.com/webstore/detail/donottrackme-online-priva/epanfjkfahimkgomnigadpkobaefekcd)
-    - [Ghostery](https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij)
-    - [jQuery Audit](https://chrome.google.com/webstore/detail/jquery-audit/dhhnpbajdcgdmbbcoakfhmfgmemlncjg)
-    - [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb)
-    - [Smart QrCode Generator](https://chrome.google.com/webstore/detail/smart-qrcode-generator/nfnbjbobhhoaekejilcmdkfomkndikho)
-- Firefox Extensions
-    - [Disconnect](https://addons.mozilla.org/en-us/firefox/addon/disconnect)
-    - [Ghostery](https://addons.mozilla.org/en-us/firefox/addon/ghostery)
-    - [Google Music Media Key Fix](https://addons.mozilla.org/en-us/firefox/addon/google-music-media-key-fix)
-    - [HTTPS-Everywhere](https://www.eff.org/https-everywhere)
 
