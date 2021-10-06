@@ -12,6 +12,7 @@ choco install google-drive-file-stream -y
 choco install keepass -y
 choco install keepass-plugin-keeanywhere -y
 choco install transmission -y
+choco install nordvpn -y
 
 # Browsers
 choco install googlechrome -y
