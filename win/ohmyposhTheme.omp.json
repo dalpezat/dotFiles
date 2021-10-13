@@ -28,7 +28,7 @@
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
           "foreground": "#000000",
-          "background": "#ff0000",
+          "background": "#a80202",
           "properties": {
             "prefix": " \uE5FF ",
             "style": "full",
